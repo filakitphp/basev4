@@ -3,8 +3,6 @@
 namespace App\Providers;
 
 use App\Providers\Filament\AdminPanelProvider;
-use App\Providers\Filament\AppPanelProvider;
-use App\Providers\Filament\GuestPanelProvider;
 use Filament\Actions;
 use Filament\Forms;
 use Filament\Infolists;
