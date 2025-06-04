@@ -9,7 +9,7 @@
 ## About FilaKit
 
 FilaKit is a robust starter kit built on Laravel 12.x and Filament 4.x, designed to accelerate the development of modern
-web applications with a ready-to-use multi-panel structure.
+web applications with a ready-to-use panel structure.
 
 ## Features
 
@@ -109,13 +109,6 @@ Install JavaScript dependencies
 pnpm install
 ```
 
-## Authentication Structure
-
-FilaKit comes pre-configured with a custom authentication system that supports different types of users:
-
-- `Admin` - For administrative panel access
-- `User` - For application panel access
-
 ## Development
 
 ``` bash
@@ -156,7 +149,7 @@ The `config/filakit.php` file centralizes the configuration of the starter kit, 
 
 FilaKit includes support for:
 
-- Admin management
+- User management
 - Tailwind CSS integration
 - Database queue configuration
 - Customizable panel routing and branding
