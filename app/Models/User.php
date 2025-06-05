@@ -69,21 +69,9 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         'remember_token',
     ];
 
-    /**
-     * @throws \Exception
-     */
     public function canAccessPanel(Panel $panel): bool
     {
-        if ($panel->getId() === 'admin') {
-            return false;
-        }
-
         return true;
-    }
-
-    public function canImpersonate(): bool
-    {
-        return false;
     }
 
     protected function casts(): array
