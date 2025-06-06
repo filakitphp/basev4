@@ -77,38 +77,6 @@ Run the server
 php artisan serve
 ```
 
-## Installation with Docker
-
-Clone the repository
-```bash
-laravel new my-app --using=filakitphp/basev4 --database=mysql
-```
-
-Move into the project directory
-```bash
-cd my-app
-```
-
-Install Composer dependencies
-```bash
-composer install
-```
-
-Set up environment
-```bash
-cp .env.example .env
-```
-
-Generate the application key
-```bash
-php artisan key:generate
-```
-
-Install JavaScript dependencies
-```bash
-pnpm install
-```
-
 ## Development
 
 ``` bash
