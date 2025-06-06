@@ -106,15 +106,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/jeffersongoncalves/filament-environment-indicator-by-pxlrbt.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/jeffersongoncalves/filament-impersonate-by-stechstudio.git"
-        }
-    ]
+    "prefer-stable": true
 }
