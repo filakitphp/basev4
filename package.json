@@ -1,5 +1,5 @@
 {
-    "name" : "filakitphp/basev4",
+    "name" : "@filakitphp/basev4",
     "private": true,
     "type": "module",
     "scripts": {
