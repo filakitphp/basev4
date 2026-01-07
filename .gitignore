@@ -23,4 +23,5 @@ phpstan.neon
 /.nova
 /.vscode
 /.zed
-/nbproject/private/
+/nbproject
+/.rnd
