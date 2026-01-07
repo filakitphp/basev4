@@ -2,14 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## 4.5.1 - 2026-01-07
-
-### What's Changed
-
-* Bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/filakitphp/basev4/pull/13
-
-**Full Changelog**: https://github.com/filakitphp/basev4/compare/4.5.0...4.5.1
-
 ## 4.5.0 - 2026-01-07
 
 ### What's Changed
