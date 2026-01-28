@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 4.6.1 - 2026-01-28
+
+### What's Changed
+
+* Bump larastan/larastan from 3.8.1 to 3.9.0 in the actions-deps group by @dependabot[bot] in https://github.com/filakitphp/basev4/pull/15
+* Bump laravel-vite-plugin from 2.0.1 to 2.1.0 in the actions-deps group by @dependabot[bot] in https://github.com/filakitphp/basev4/pull/16
+* Bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/filakitphp/basev4/pull/17
+* Bump barryvdh/laravel-debugbar from 3.16.3 to 3.16.4 in the actions-deps group by @dependabot[bot] in https://github.com/filakitphp/basev4/pull/18
+* chore(deps-dev): bump axios from 1.13.2 to 1.13.3 in the actions-deps group by @dependabot[bot] in https://github.com/filakitphp/basev4/pull/19
+* chore(deps-dev): bump barryvdh/laravel-debugbar from 3.16.4 to 4.0.2 in the actions-deps group by @dependabot[bot] in https://github.com/filakitphp/basev4/pull/20
+
+**Full Changelog**: https://github.com/filakitphp/basev4/compare/4.5.3...4.6.1
+
 ## 4.5.3 - 2026-01-16
 
 ### What's Changed
