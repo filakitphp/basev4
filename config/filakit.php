@@ -13,20 +13,5 @@ return [
     'defaultIsoTimeDisplayFormat' => 'LT',
     'theme_mode' => ThemeMode::Light,
     'admin_panel_enabled' => true,
-    'favicon' => [
-        'enabled' => true,
-        'manifest' => [
-            'name' => env('APP_NAME', 'Filakit'),
-            'icons' => [
-                '36' => '0.75',
-                '48' => '1.0',
-                '72' => '1.5',
-                '96' => '2.0',
-                '144' => '3.0',
-                '192' => '4.0',
-            ],
-        ],
-        'logo' => 'resources/images/logo-filakit.png',
-        'favicon' => 'resources/favicon/favicon.ico',
-    ],
+    'logo' => 'resources/images/logo-filakit.png',
 ];
