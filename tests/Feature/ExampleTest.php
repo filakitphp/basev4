@@ -2,18 +2,20 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
     /**
-     * A basic test example.
+     * The kit ships no "/" route; the admin panel lives at /admin.
      */
-    public function test_the_application_returns_a_successful_response(): void
+    public function test_guests_are_redirected_to_the_admin_login(): void
     {
-        $response = $this->get('/');
+        $this->get('/admin')->assertRedirect(route('filament.admin.auth.login'));
+    }
 
-        $response->assertStatus(200);
+    public function test_the_admin_login_page_renders(): void
+    {
+        $this->get(route('filament.admin.auth.login'))->assertOk();
     }
 }
