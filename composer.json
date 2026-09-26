@@ -21,6 +21,7 @@
         "jeffersongoncalves/filament-additional-information": "^2.0",
         "jeffersongoncalves/filament-pwa": "^2.0",
         "jeffersongoncalves/filament-sensible-defaults": "^2.0",
+        "jeffersongoncalves/filament-user": "^2.0",
         "laravel/framework": "^13.0",
         "laravel/tinker": "^3.0",
         "livewire/blaze": "^1.0",
