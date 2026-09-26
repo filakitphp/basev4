@@ -23,7 +23,7 @@ web applications with a ready-to-use panel structure.
 
 - PHP 8.3 or higher
 - Composer
-- Node.js and PNPM
+- Node.js and Bun
 
 ## Installation
 
@@ -64,7 +64,7 @@ This command automates the installation process by:
 
 Install JavaScript dependencies
 ``` bash
-pnpm install
+bun install
 ```
 Install Composer dependencies
 ``` bash
@@ -84,7 +84,7 @@ php artisan migrate
 ```
 Build frontend assets
 ``` bash
-pnpm run build
+bun run build
 ```
 Run the server
 ``` bash
@@ -100,7 +100,7 @@ composer dev
 # Or run each component separately
 php artisan serve
 php artisan queue:listen --tries=1
-pnpm run dev
+bun run dev
 ```
 
 ## Customization
