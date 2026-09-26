@@ -2,7 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\Pages\Auth\Login;
 use Filament\Enums\ThemeMode;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -21,6 +20,8 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use JeffersonGoncalves\Filament\Pwa\FilamentPwaPlugin;
+use JeffersonGoncalves\Filament\User\Pages\Auth\Login;
+use JeffersonGoncalves\Filament\User\UserPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -67,6 +68,7 @@ class AdminPanelProvider extends PanelProvider
                 __('Management'),
             ])
             ->plugins([
+                UserPlugin::make(),
                 FilamentPwaPlugin::make(),
             ])
             ->unsavedChangesAlerts()
