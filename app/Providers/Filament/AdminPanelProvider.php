@@ -20,8 +20,10 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use JeffersonGoncalves\Filament\Pwa\FilamentPwaPlugin;
+use JeffersonGoncalves\Filament\SecurityHeaders\SecurityHeadersPlugin;
 use JeffersonGoncalves\Filament\User\Pages\Auth\Login;
 use JeffersonGoncalves\Filament\User\UserPlugin;
+use JeffersonGoncalves\SecurityHeaders\Middleware\SecurityHeaders;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -50,6 +52,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\FilamentInfoWidget::class,
             ])
             ->middleware([
+                SecurityHeaders::class,
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
                 StartSession::class,
@@ -68,6 +71,8 @@ class AdminPanelProvider extends PanelProvider
                 __('Management'),
             ])
             ->plugins([
+                SecurityHeadersPlugin::make()
+                    ->navigationGroup(fn (): string => __('Settings')),
                 UserPlugin::make(),
                 FilamentPwaPlugin::make(),
             ])
